@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Rakshi</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      max-width: 400px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .emoji {
+      font-size: 70px;
+      animation: bounce 2s infinite;
+    }
+
+    h1 {
+      color: #e63946;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #444;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .heart {
+      color: red;
+      font-size: 28px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="emoji">😔</div>
+  <h1>I'm Sorry</h1>
+  <p>
+    <strong>Rakshi,</strong><br><br>
+    I am really sorry. 😔<br>
+    I never wanted to hurt you.<br>
+    Please forgive me if you can.<br>
+    You mean a lot to me. ❤️
+  </p>
+  <div class="heart">❤️</div>
+</div>
+
+</body>
+</html>
